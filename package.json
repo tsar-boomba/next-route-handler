@@ -1,0 +1,48 @@
+{
+	"name": "next-route-handler",
+	"private": false,
+	"version": "0.0.1",
+	"description": "Make using next.js API routes easier with middleware and easy method handling.",
+	"repository": {
+		"url": "https://github.com/tsar-boomba/next-route-handler"
+	},
+	"main": "./lib/cjs/index.js",
+	"module": "./lib/esm/index.js",
+	"types": "./lib/esm/index.d.ts",
+	"files": [
+		"/lib"
+	],
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build && pinst --disable",
+		"postpublish": "pinst --enable",
+		"watch": "rollup -cw",
+		"lint-fix": "eslint --fix",
+		"prepare": "husky install",
+		"postinstall": "husky install",
+		"deploy": "npm run build && cd example && npm install && npm run build"
+	},
+	"author": "Isaiah Gamble (itg.2048@gmail.com)",
+	"license": "MIT",
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.0.6",
+		"@types/node": "^17.0.18",
+		"@typescript-eslint/eslint-plugin": "^5.3.0",
+		"@typescript-eslint/parser": "^5.3.0",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "^12.0.3",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^7.0.4",
+		"next": "^12.0.3",
+		"pinst": "^2.1.6",
+		"postcss": "^8.3.11",
+		"prettier": "^2.4.1",
+		"rollup": "^2.58.3",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.1",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"typescript": "^4.4.4"
+	}
+}

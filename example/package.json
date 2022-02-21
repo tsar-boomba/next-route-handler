@@ -1,0 +1,32 @@
+{
+	"name": "example",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@mantine/core": "^3.6.9",
+		"@mantine/hooks": "^3.6.9",
+		"@mantine/next": "^3.6.9",
+		"next": "^12.1.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"swr": "^1.1.2",
+		"next-route-handler": "../"
+	},
+	"devDependencies": {
+		"@types/react": "17.0.34",
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
+		"@typescript-eslint/parser": "^5.0.0",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "11.1.2",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.4.1",
+		"typescript": "4.4.4"
+	}
+}
