@@ -36,7 +36,7 @@ export type RouteHandlerMiddleware<
 	middleware: (
 		req: ReqType<Type> & Req,
 		res: ResType<Type> & Res,
-		end: (lastRes: (lastRes: Res) => void) => void,
+		end: (lastRes: (lastRes: ResType<Type> & Res) => void) => void,
 		env: 'ssr' | 'api',
 	) => void | Promise<void>;
 };
