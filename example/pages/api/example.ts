@@ -12,9 +12,13 @@ interface WUser {
 */
 const exampleMiddleware: RouteHandlerMiddleware<'api', WUser> = {
 	middleware: (req, res, end, env) => {
+
 		req.user = req.body; // edit request body for the handler to make use of
+
 		env; // the execution environment of the middleware ('ssr' or 'api')
-		/* return end((lastRes) => console.log(lastRes)) */ // end execution of the route and do something with the response
+		
+		/* return end((lastRes) => res.status(403).json({ message: "you are not authorized." })) */ // end execution of the route and do something with the response
+	
 	}, // the middleware function to be run
 	key: 'example', // a unique key to identify the middleware
 	ssr: false, // whether this middleware works in ssr
