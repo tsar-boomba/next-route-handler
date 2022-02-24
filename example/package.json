@@ -9,14 +9,14 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@mantine/core": "^3.6.9",
-		"@mantine/hooks": "^3.6.9",
-		"@mantine/next": "^3.6.9",
-		"@mantine/prism": "^3.6.9",
-		"next": "^12.1.0",
+		"@mantine/core": "../node_modules/@mantine/core",
+		"@mantine/hooks": "../node_modules/@mantine/hooks",
+		"@mantine/next": "../node_modules/@mantine/next",
+		"@mantine/prism": "../node_modules/@mantine/prism",
+		"next": "../node_modules/next",
 		"next-route-handler": "../",
-		"react": "17.0.2",
-		"react-dom": "17.0.2"
+		"react": "../node_modules/react",
+		"react-dom": "../node_modules/react-dom"
 	},
 	"devDependencies": {
 		"@types/react": "17.0.34",
