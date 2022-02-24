@@ -30,7 +30,7 @@ export default new RouteHandler<'api', WUser>()
 	.post((req, res) =>
 		res.status(200).json({ message: `I was posted by ${req.user} (POST method)` }),
 	)
-	.patch((req, res) => res.status(200).json({ message: 'I was patched (PATCH method)' }))
+	.patch((req, res) => res.status(200).json({ message: `I was patched by ${req.user} (PATCH method)` }))
 	.put((req, res) => res.status(200).json({ message: 'I was put (PUT method)' }))
 	.delete(
 		(req, res) =>

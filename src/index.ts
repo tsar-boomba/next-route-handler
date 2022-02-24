@@ -167,7 +167,7 @@ class RouteHandler<Type extends 'ssr' | 'api' = 'api', Req = {}, Res = {}> exten
 
 		return new Promise<void>((resolve, reject) => {
 			try {
-				switch (req.method) {
+				switch (req.method?.toUpperCase()) {
 					case 'GET':
 						selectedHandler = this.onGet;
 						break;
@@ -243,7 +243,7 @@ class RouteHandler<Type extends 'ssr' | 'api' = 'api', Req = {}, Res = {}> exten
 
 		return new Promise<void>((resolve, reject) => {
 			try {
-				switch (req.method) {
+				switch (req.method?.toUpperCase()) {
 					case 'GET':
 						selectedHandler = this.onGet;
 						break;
