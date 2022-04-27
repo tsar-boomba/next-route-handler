@@ -1,7 +1,7 @@
 {
 	"name": "next-route-handler",
 	"private": false,
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Make using next.js API routes easier with middleware and easy method handling.",
 	"repository": {
 		"url": "https://github.com/tsar-boomba/next-route-handler"
